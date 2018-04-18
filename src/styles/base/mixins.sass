@@ -1,0 +1,62 @@
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+=rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
+
+=wrp
+  max-width: 1240px
+  margin: 0 auto
+  padding: 0 50px
+  +r(1024)
+    max-width: 958px
+    padding: 0 15px
+
+=b
+  border: solid 1px red
+
+=zero
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  margin: auto
+
+=hover
+  .no-touch &:hover
+    @content
+
+%psevdo
+  position: relative
+  &:before,&:after
+    content: ' '
+    position: absolute
+=psevdo
+  @extend %psevdo
+
+=tr
+  transition: all .3s ease
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

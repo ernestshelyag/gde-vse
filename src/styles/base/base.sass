@@ -1,0 +1,35 @@
+$browser-context: 16 // Default
+
+@function em($pixels, $context: $browser-context)
+  @return #{$pixels/$context}em
+
+*, *:before, *:after
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+
+*::selection
+  background: rgba($main-color,.93)
+  color: $bg-color
+
+html
+  -webkit-text-size-adjust: none
+  text-size-adjust: none
+
+body
+  +lato
+  font-weight: 400
+  color: $font-color
+  background-color: $bg-color
+  font-size: 16px
+  position: relative
+  min-width: 320px
+
+a
+  display: inline-block
+  transition: all .3s ease-in
+  color: $font-color
+  text-decoration: none
+
+p
+  line-height: 2
+  margin: 1em 0

@@ -1,0 +1,33 @@
+// общий стиль для всех аватарок
+
+.ava
+  border-radius: 50%
+  width: 40px
+  height: 40px
+  object-fit: cover
+
+// nav
+
+.nav
+  display: flex
+  height: 40px
+  +resp-mobile-s
+    flex-direction: column
+    align-items: center
+    height: auto
+.nav-item
+  width: 25%
+  line-height: 35px
+  text-align: center
+  font-size: 14px
+  cursor: pointer
+  +tr
+  &.active
+    border-bottom: solid 3px $col-red!important
+  &:hover
+    border-bottom: solid 3px rgba(#E25451, .5)
+  +resp-mobile-s
+    width: auto
+
+
+

@@ -8,28 +8,63 @@ $browser-context: 16 // Default
   -moz-box-sizing: border-box
 
 *::selection
-  background: rgba($main-color,.93)
-  color: $bg-color
+  background: rgba($col-red,.93)
+  color: #fff
 
 html
-  -webkit-text-size-adjust: none
   text-size-adjust: none
+  background: $col-bg-gray
+  padding: 10px
+  +resp-wide
+    padding: 0
 
 body
-  +lato
-  font-weight: 400
-  color: $font-color
-  background-color: $bg-color
+  +code-font
+  color: #333
   font-size: 16px
   position: relative
-  min-width: 320px
+  min-width: 300px
+  background: #fff
+  border: solid 1px $col-font-gray
+  height: calc(100vh - 20px)
+  max-width: 1200px
+  margin: 0 auto
+  padding: 5px 10px
+  display: flex
+  flex-direction: column
+  +resp-wide
+    height: 100vh
+    border: 0
+  +r(820)
+    height: auto
+
+// растягивает main прибивает footer к низу
+main
+  flex-grow: 1
+// - - - - -
 
 a
   display: inline-block
   transition: all .3s ease-in
-  color: $font-color
+  color: #333
   text-decoration: none
 
-p
-  line-height: 2
-  margin: 1em 0
+button
+  +code-font
+  background: transparent
+  border: 0
+  color: #333
+  cursor: pointer
+  outline: 0
+
+input,
+select,
+textarea
+  +code-font
+  background: transparent
+  border: 0
+  color: #333
+  appearance: none
+  outline: 0
+
++placeholder-color($col-font-gray)

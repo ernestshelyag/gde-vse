@@ -1,0 +1,69 @@
++b.DIV.single-event
+    +e.DIV.top-block
+        +e.H1.title Собираемся на шашлыки
+        +e.BUTTON.btn
+            +e.SPAN.btn-text Пойду
+            +e.I.arr.fas.fa-angle-down
+    +e.UL.nav.nav
+        +e.LI.nav-item.nav-item Общая беседа
+        +e.LI.nav-item.nav-item.active О событии
+        +e.LI.nav-item.nav-item Засписание
+        +e.LI.nav-item.nav-item Список покупок
+    +e.DIV.container
+        +e.DIV.left-block
+
+            // single card start
+
+            +b.DIV.card
+                +e.DIV.top-block
+                    +e.DIV.info-block
+                        +e.UL.info-list.card__info-list_single
+                            +e.LI.info-item
+                                +e.I.info-icon.far.fa-calendar
+                                +e.SPAN.info-text 6 апреля
+                            +e.LI.info-item
+                                +e.I.info-icon.far.fa-clock
+                                +e.SPAN.info-text 12:15
+                            +e.LI.info-item.card__info-item_price
+                                +e.I.info-icon.fas.fa-dollar-sign
+                                +e.SPAN.info-text 300
+                            +e.LI.info-item
+                                +e.I.info-icon.fas.fa-subway
+                                +e.SPAN.info-text Маяковская
+                            +e.LI.info-item
+                                +e.I.info-icon.fas.fa-map-marker-alt
+                                +e.SPAN.info-text Невский проспект, 20
+                +e.DIV.bottom-block
+                    +e.DIV.person-block
+                        +e.IMG.person-img.ava(src="img/user2.jpg")
+                        +e.SPAN.name Сергей Воронин
+                    +e.P.invite-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum placeat vitae! Aliquam doloribus incidunt maiores, nemo quae quia quibusdam?
+                +b.DIV.card-about
+                    +e.IMG.img(src="img/forest.jpg")
+                    +e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores aut dolore dolorum enim eos est eveniet fugit laudantium maiores mollitia nam nesciunt possimus, quaerat ratione reiciendis similique sit vel.
+                    +e.DIV.img-text-block
+                        +e.IMG.img-small(src="img/forest.jpg")
+                        +e.P.text-small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse ex laudantium nesciunt quam suscipit velit voluptatum. Incidunt, rem, totam!
+                    +e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores aut dolore dolorum enim eos est eveniet fugit laudantium maiores mollitia nam nesciunt possimus, quaerat ratione reiciendis similique sit vel.
+                        +e.DIV.img-text-block
+                            +e.IMG.img-small(src="img/forest.jpg")
+                            +e.P.text-small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse ex laudantium nesciunt quam suscipit velit voluptatum. Incidunt, rem, totam!
+                    +e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores aut dolore dolorum enim eos est eveniet fugit laudantium maiores mollitia nam nesciunt possimus, quaerat ratione reiciendis similique sit vel.
+
+            // single card finish
+
+        +e.DIV.right-block
+            +b.DIV.right-block
+                +e.UL.list
+                    +e.LI.item Приглашены(25)
+                    +e.LI.item Идут(11)
+                    +e.LI.item.active Не уверены(12)
+                +e.UL.people-list
+                    each item in people
+                        +e.LI.people-item
+                            +e.IMG.img.ava(src=`${item.img}`)
+                            +e.SPAN.name= item.name
+                +e.DIV.map#map
+
+
+

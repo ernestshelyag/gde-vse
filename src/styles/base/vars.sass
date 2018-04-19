@@ -1,15 +1,17 @@
 // colors
 
-$bg-color: #fffff0
-$main-color: red
-$main-color-darker: tomato
-$main-color-gray: gray
-$font-color: #333
+$col-red: #E25451
+$col-blue: #0782C3
+$col-dark-blue: #056EA5
+$col-green: #43A047
+$col-bg-gray: #F4F5FC
+$col-bg-gray: #c5c6cd
+$col-font-gray: #5a5e78
 
 // fonts
 
-=lato
-  font-family: 'Lato', Helvetica, sans-serif
+=london
+  font-family: 'London', Helvetica, sans-serif
 
 =code-font
   font-family: 'Source Code Pro', monospace
@@ -18,21 +20,12 @@ $font-color: #333
 =font-face($font-family, $file-path, $weight: normal, $style: normal)
   @font-face
     font-family: $font-family
-    src: url('#{$file-path}.woff2') format('woff2'), url('#{$file-path}.woff') format('woff')
+    src: url('#{$file-path}.eot') format('eot'), url('#{$file-path}.otf') format('otf'), url('#{$file-path}.svg') format('svg'), url('#{$file-path}.ttf') format('ttf'), url('#{$file-path}.woff') format('woff')
     font-weight: $weight
     font-style: $style
 
-+font-face('Lato', '../fonts/lato-hairline', 100)
-+font-face('Lato', '../fonts/lato-thin', 200)
-+font-face('Lato', '../fonts/lato-light', 300)
-+font-face('Lato', '../fonts/lato-regular', 400)
-+font-face('Lato', '../fonts/lato-medium', 500)
-+font-face('Lato', '../fonts/lato-semibold', 600)
-+font-face('Lato', '../fonts/lato-bold', 700)
-+font-face('Lato', '../fonts/lato-heavy', 800)
-+font-face('Lato', '../fonts/lato-black', 900)
-+font-face('Lato', '../fonts/lato-italic', 400, italic)
-+font-face('Lato', '../fonts/lato-bolditalic', 700, italic)
++font-face('London', '../fonts/London-Medium', 400)
+
 
 
 

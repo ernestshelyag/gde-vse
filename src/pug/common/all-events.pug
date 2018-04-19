@@ -1,0 +1,49 @@
++b.DIV.all-events
+    +e.UL.nav.nav
+        +e.LI.nav-item.nav-item Ждут ответа
+        +e.LI.nav-item.nav-item.active В планах
+        +e.LI.nav-item.nav-item Прошедщие
+        +e.LI.nav-item.nav-item Мои
+    +b.DIV.date-block
+        +e.SPAN.text 6 апреля 2017
+        +e.SPAN.text Воскресенье
+        +e.DIV.arr-block
+            +e.I.calendar-icon.far.fa-calendar
+            +e.SPAN.text Календарь
+            +e.I.arr.fas.fa-angle-down
+        +e.DIV.arr-block
+            +e.SPAN.text.date-block__text_all Все
+            +e.I.arr.fas.fa-angle-down
+
+    +e.DIV.cards-block
+        each item in cards
+            +b.DIV.card
+                +e.DIV.top-block
+                    +e.DIV.info-block
+                        +e.H2.title= item.title
+                        +e.UL.info-list
+                            +e.LI.info-item
+                                +e.I.info-icon.far.fa-calendar
+                                +e.SPAN.info-text= item.date
+                            +e.LI.info-item
+                                +e.I.info-icon.far.fa-clock
+                                +e.SPAN.info-text= item.time
+                            +e.LI.info-item.card__info-item_price
+                                +e.I.info-icon.fas.fa-dollar-sign
+                                +e.SPAN.info-text= item.price
+                            +e.LI.info-item
+                                +e.I.info-icon.fas.fa-subway
+                                +e.SPAN.info-text= item.metro
+                            +e.LI.info-item
+                                +e.I.info-icon.fas.fa-map-marker-alt
+                                +e.SPAN.info-text= item.street
+                    +e.DIV.img-block
+                        +e.IMG.img(src=`${item.img}`)
+                        +e.BUTTON.btn
+                            +e.SPAN.btn-text Без решения
+                            +e.I.arr.fas.fa-angle-down
+                +e.DIV.bottom-block
+                    +e.DIV.person-block
+                        +e.IMG.person-img.ava(src=`${item.person}`)
+                        +e.SPAN.name= item.name
+                    +e.P.invite-text= item.text

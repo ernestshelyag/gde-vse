@@ -1,0 +1,73 @@
+.single-event
+  //display: none
+  flex-grow: 1
+  padding: 0 20px
+  +resp-desktop
+    padding: 0 0 0 5px
+  &__top-block
+    +flex
+    height: 40px
+  &__btn
+    background: $col-green
+    color: #fff
+    width: 120px
+    border-radius: 3px
+    +flex
+    height: 25px
+  &__nav
+    justify-content: space-around
+    margin-bottom: 5px
+  &__nav-item
+    width: auto
+    padding: 0 15px
+    +resp-desktop
+      padding: 0
+      font-size: 12px
+  &__container
+    height: calc(100% - 85px)
+    overflow-y: scroll
+    display: flex
+    +resp-desktop
+      flex-direction: column
+  &__left-block
+    width: 55%
+    +resp-desktop
+      width: 100%
+  &__right-block
+    width: 45%
+    padding-left: 15px
+    +resp-desktop
+      width: 100%
+      padding-left: 0
+
+.right-block
+  &__item
+    display: inline-block
+    font-size: 12px
+    padding-bottom: 5px
+    &.active
+      color: $col-blue
+      border-bottom: solid 2px $col-blue
+  &__people-list
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin-top: 20px
+  &__people-item
+    width: 25%
+    margin-bottom: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__name
+    font-size: 12px
+  &__map
+    height: 300px
+    margin-bottom: 20px
+    //display: none
+
+
+
+
+
+

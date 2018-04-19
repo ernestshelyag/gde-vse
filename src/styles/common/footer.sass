@@ -1,0 +1,21 @@
+.footer
+  +flex
+  height: 30px
+  +resp-tablet
+    height: auto
+    flex-direction: column
+  &__item
+    display: inline
+    margin-right: 20px
+    +resp-mobile
+      display: block
+      text-align: center
+      margin-bottom: 3px
+  &__link
+    color: $col-font-gray
+  &__copyright
+    +london
+    color: $col-font-gray
+    +resp-tablet
+      margin-top: 10px
+

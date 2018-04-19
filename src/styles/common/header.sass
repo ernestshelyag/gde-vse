@@ -1,0 +1,27 @@
+.header
+  height: 50px
+  margin-bottom: 15px
+  +flex
+  +resp-mobile
+    flex-direction: column
+    height: auto
+  &__logo-img
+    width: auto
+    height: 40px
+  &__form
+    flex-grow: 1
+    margin: 0 20px 0 50px
+    +flex
+    +resp-mobile
+      margin: 0
+      width: 100%
+      max-width: 300px
+      padding: 5px 0
+      margin-bottom: 5px
+      border-bottom: solid 1px $col-bg-gray
+  &__input
+    flex-grow: 1
+    padding-left: 10px
+  &__client
+    +flex
+    width: 90px

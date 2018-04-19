@@ -62,3 +62,42 @@ html(lang="ru")
     // build:js js/main.min.js
     script(src="js/main.js")
     // endbuild
+
+    script(defer='', src='https://use.fontawesome.com/releases/v5.0.10/js/all.js', integrity='sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+', crossorigin='anonymous')
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script.
+      // map
+      ymaps.ready(init);
+      var myMap;
+
+      function init() {
+        myMap = new ymaps.Map("map", {
+          center: [59.931632, 30.336528],
+          zoom: 17
+        });
+
+        var myPlacemark = new ymaps.Placemark([59.931632, 30.336528], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: '/img/map-mark.svg',
+          iconImageSize: [50, 50],
+          iconImageOffset: [-3, -42],
+          hintContent: '',
+          balloonContent: ''
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+
+        myMap.controls
+          .remove('Button')
+          .remove('fullscreenControl')
+          .remove('typeSelector')
+          .remove('geolocationControl')
+          .remove('searchControl')
+          .remove('trafficControl')
+          .remove('rulerControl')
+          .remove('zoomControl');
+
+        myMap.behaviors.disable([
+          'scrollZoom'
+        ])
+      }

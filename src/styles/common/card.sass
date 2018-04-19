@@ -1,0 +1,80 @@
+.card
+  margin-bottom: 30px
+
+  // top
+
+  &__top-block
+    display: flex
+    justify-content: space-between
+    +resp-mobile
+      flex-direction: column
+      align-items: flex-end
+    +resp-mobile-s
+      align-items: center
+  &__info-list
+    display: flex
+    flex-wrap: wrap
+    margin-top: 30px
+    &_single
+      margin-top: 10px
+  &__info-item
+    width: 110px
+    color: $col-font-gray
+    font-size: 12px
+    margin-bottom: 15px
+    &_price
+      width: 60px
+      text-align: right
+    &:last-child
+      width: auto
+  &__info-text
+    padding: 0 15px 0 5px
+  &__img-block
+    display: flex
+    flex-direction: column
+    width: 200px
+    +resp-mobile-s
+      margin-bottom: 10px
+  &__img
+    height: 80px
+    width: 100%
+    object-fit: cover
+    flex-grow: 1
+    margin-bottom: 1px
+    border-radius: 5px 5px 0 0
+  &__btn
+    background: $col-red
+    color: #fff
+    height: 30px
+    border-radius: 0 0 5px 5px
+  &__arr
+    margin-left: 5px
+
+  // bottom
+
+  &__person-block
+    display: flex
+    align-items: center
+    margin-bottom: 5px
+  &__name
+    padding-left: 15px
+    font-size: 14px
+  &__invite-text
+    font-size: 12px
+
+.card-about
+  margin-top: 20px
+  &__img
+    width: 100%
+  &__text
+    font-size: 12px
+    margin: 15px 0
+  &__img-text-block
+    display: flex
+    align-items: center
+  &__img-small
+    width: 120px
+    height: auto
+  &__text-small
+    font-size: 12px
+    margin-left: 20px

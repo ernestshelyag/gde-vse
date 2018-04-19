@@ -1,33 +1,49 @@
+// Responsive
+
 =r($width)
   @media only screen and (max-width: $width+ "px")
+    @content
+
+=resp-wide
+  @media only screen and (max-width: 1200px)
+    @content
+
+=resp-desktop
+  @media only screen and (max-width: 992px)
+    @content
+
+=resp-tablet
+  @media only screen and (max-width: 768px)
+    @content
+
+=resp-mobile
+  @media only screen and (max-width: 568px)
+    @content
+
+=resp-mobile-s
+  @media only screen and (max-width: 414px)
     @content
 
 =rmin($width)
   @media only screen and (min-width: $width+ "px")
     @content
 
-=wrp
-  max-width: 1240px
-  margin: 0 auto
-  padding: 0 50px
-  +r(1024)
-    max-width: 958px
-    padding: 0 15px
+// - - - - -
 
 =b
   border: solid 1px red
 
+=flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+
 =zero
-  position: absolute
   top: 0
   bottom: 0
   right: 0
   left: 0
   margin: auto
-
-=hover
-  .no-touch &:hover
-    @content
 
 %psevdo
   position: relative
@@ -40,23 +56,16 @@
 =tr
   transition: all .3s ease
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=placeholder-color($color)
+  &::-webkit-input-placeholder  /* WebKit browsers */
+      color: $color
+      opacity: .5
+  &:-moz-placeholder  /* Mozilla Firefox 4 to 18 */
+      color: $color
+      opacity: .5
+  &::-moz-placeholder  /* Mozilla Firefox 19+ */
+      color: $color
+      opacity: .5
+  &:-ms-input-placeholder  /* Internet Explorer 10+ */
+      color: $color
+      opacity: .5

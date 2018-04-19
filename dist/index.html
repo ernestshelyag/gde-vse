@@ -31,11 +31,317 @@
       Вы используете старую версию браузера.
       Пожалуйста<a href="http://browsehappy.com/" style="padding: 0 5px; font-weight: bold; text-transform: uppercase; color: blue;">обновите ваш браузер</a>перейдя по ссылке.
     </p><![endif]-->
-    <header class="header">header
+    <header class="header"><a class="header__logo" href="/"><img class="header__logo-img" src="img/logo.png" alt="" role="presentation"/></a>
+      <form class="header__form"><i class="header__input-icon fas fa-location-arrow"></i><input class="header__input" type="text" placeholder="Москва, Воронеж, Таганрог..."/>
+        <button class="header__submit" type="submit"><i class="header__button-icon fas fa-bullseye fa-lg"></i>
+        </button>
+      </form>
+      <div class="header__client"><i class="header__bell far fa-bell fa-lg"></i><img class="header__ava-img ava" src="img/user.jpg" alt="" role="presentation"/>
+      </div>
     </header>
-    <div class="hero">hero
-    </div>
-    <footer class="footer">footer
+    <main class="main">
+      <div class="main-menu">
+        <ul class="main-menu__nav">
+          <li class="main-menu__nav-item active"><span class="main-menu__nav-num">12</span><span class="main-menu__nav-text">События</span>
+          </li>
+          <li class="main-menu__nav-item"><span class="main-menu__nav-num">7</span><span class="main-menu__nav-text">Диалоги</span>
+          </li>
+          <li class="main-menu__nav-item"><span class="main-menu__nav-num">12</span><span class="main-menu__nav-text">Люди</span>
+          </li>
+        </ul>
+        <div class="main-menu__container">
+          <div class="main-menu__item active">
+            <div class="all-events">
+              <ul class="all-events__nav nav">
+                <li class="all-events__nav-item nav-item">Ждут ответа
+                </li>
+                <li class="all-events__nav-item nav-item active">В планах
+                </li>
+                <li class="all-events__nav-item nav-item">Прошедщие
+                </li>
+                <li class="all-events__nav-item nav-item">Мои
+                </li>
+              </ul>
+              <div class="date-block"><span class="date-block__text">6 апреля 2017</span><span class="date-block__text">Воскресенье</span>
+                <div class="date-block__arr-block"><i class="date-block__calendar-icon far fa-calendar"></i><span class="date-block__text">Календарь</span><i class="date-block__arr fas fa-angle-down"></i>
+                </div>
+                <div class="date-block__arr-block"><span class="date-block__text date-block__text_all">Все</span><i class="date-block__arr fas fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="all-events__cards-block">
+                <div class="card">
+                  <div class="card__top-block">
+                    <div class="card__info-block">
+                      <h2 class="card__title">Поход на Криминальное чтиво
+                      </h2>
+                      <ul class="card__info-list">
+                        <li class="card__info-item"><i class="card__info-icon far fa-calendar"></i><span class="card__info-text">6 апреля</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon far fa-clock"></i><span class="card__info-text">12:15</span>
+                        </li>
+                        <li class="card__info-item card__info-item_price"><i class="card__info-icon fas fa-dollar-sign"></i><span class="card__info-text">300</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-subway"></i><span class="card__info-text">Маяковская</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-map-marker-alt"></i><span class="card__info-text">Невский проспект, 20</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card__img-block"><img class="card__img" src="img/tarantino.jpg" alt="" role="presentation"/>
+                      <button class="card__btn"><span class="card__btn-text">Без решения</span><i class="card__arr fas fa-angle-down"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card__bottom-block">
+                    <div class="card__person-block"><img class="card__person-img ava" src="img/user2.jpg" alt="" role="presentation"/><span class="card__name">Сергей Воронин</span>
+                    </div>
+                    <p class="card__invite-text">Тарантино. Круто. Пойдемте в кино. Ура. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis dolor dolore dolores fugiat itaque laboriosam nulla odit, praesentium vero.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__top-block">
+                    <div class="card__info-block">
+                      <h2 class="card__title">Прогулка по лесу
+                      </h2>
+                      <ul class="card__info-list">
+                        <li class="card__info-item"><i class="card__info-icon far fa-calendar"></i><span class="card__info-text">6 апреля</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon far fa-clock"></i><span class="card__info-text">12:15</span>
+                        </li>
+                        <li class="card__info-item card__info-item_price"><i class="card__info-icon fas fa-dollar-sign"></i><span class="card__info-text">200</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-subway"></i><span class="card__info-text">Владимирская</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-map-marker-alt"></i><span class="card__info-text">Кузнечный проспект, 5</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card__img-block"><img class="card__img" src="img/forest.jpg" alt="" role="presentation"/>
+                      <button class="card__btn"><span class="card__btn-text">Без решения</span><i class="card__arr fas fa-angle-down"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card__bottom-block">
+                    <div class="card__person-block"><img class="card__person-img ava" src="img/user3.jpg" alt="" role="presentation"/><span class="card__name">Ирина Павлова</span>
+                    </div>
+                    <p class="card__invite-text">Лес - это прекрасно. Палки, бревна... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis dolor dolore dolores fugiat itaque laboriosam nulla odit, praesentium vero.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__top-block">
+                    <div class="card__info-block">
+                      <h2 class="card__title">Поход на Криминальное чтиво
+                      </h2>
+                      <ul class="card__info-list">
+                        <li class="card__info-item"><i class="card__info-icon far fa-calendar"></i><span class="card__info-text">6 апреля</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon far fa-clock"></i><span class="card__info-text">12:15</span>
+                        </li>
+                        <li class="card__info-item card__info-item_price"><i class="card__info-icon fas fa-dollar-sign"></i><span class="card__info-text">300</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-subway"></i><span class="card__info-text">Маяковская</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-map-marker-alt"></i><span class="card__info-text">Невский проспект, 20</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card__img-block"><img class="card__img" src="img/tarantino.jpg" alt="" role="presentation"/>
+                      <button class="card__btn"><span class="card__btn-text">Без решения</span><i class="card__arr fas fa-angle-down"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card__bottom-block">
+                    <div class="card__person-block"><img class="card__person-img ava" src="img/user2.jpg" alt="" role="presentation"/><span class="card__name">Сергей Воронин</span>
+                    </div>
+                    <p class="card__invite-text">Тарантино. Круто. Пойдемте в кино. Ура. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis dolor dolore dolores fugiat itaque laboriosam nulla odit, praesentium vero.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__top-block">
+                    <div class="card__info-block">
+                      <h2 class="card__title">Прогулка по лесу
+                      </h2>
+                      <ul class="card__info-list">
+                        <li class="card__info-item"><i class="card__info-icon far fa-calendar"></i><span class="card__info-text">6 апреля</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon far fa-clock"></i><span class="card__info-text">12:15</span>
+                        </li>
+                        <li class="card__info-item card__info-item_price"><i class="card__info-icon fas fa-dollar-sign"></i><span class="card__info-text">200</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-subway"></i><span class="card__info-text">Владимирская</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-map-marker-alt"></i><span class="card__info-text">Кузнечный проспект, 5</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card__img-block"><img class="card__img" src="img/forest.jpg" alt="" role="presentation"/>
+                      <button class="card__btn"><span class="card__btn-text">Без решения</span><i class="card__arr fas fa-angle-down"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card__bottom-block">
+                    <div class="card__person-block"><img class="card__person-img ava" src="img/user3.jpg" alt="" role="presentation"/><span class="card__name">Ирина Павлова</span>
+                    </div>
+                    <p class="card__invite-text">Лес - это прекрасно. Палки, бревна... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis dolor dolore dolores fugiat itaque laboriosam nulla odit, praesentium vero.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__top-block">
+                    <div class="card__info-block">
+                      <h2 class="card__title">Поход на Криминальное чтиво
+                      </h2>
+                      <ul class="card__info-list">
+                        <li class="card__info-item"><i class="card__info-icon far fa-calendar"></i><span class="card__info-text">6 апреля</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon far fa-clock"></i><span class="card__info-text">12:15</span>
+                        </li>
+                        <li class="card__info-item card__info-item_price"><i class="card__info-icon fas fa-dollar-sign"></i><span class="card__info-text">300</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-subway"></i><span class="card__info-text">Маяковская</span>
+                        </li>
+                        <li class="card__info-item"><i class="card__info-icon fas fa-map-marker-alt"></i><span class="card__info-text">Невский проспект, 20</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card__img-block"><img class="card__img" src="img/tarantino.jpg" alt="" role="presentation"/>
+                      <button class="card__btn"><span class="card__btn-text">Без решения</span><i class="card__arr fas fa-angle-down"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card__bottom-block">
+                    <div class="card__person-block"><img class="card__person-img ava" src="img/user2.jpg" alt="" role="presentation"/><span class="card__name">Сергей Воронин</span>
+                    </div>
+                    <p class="card__invite-text">Тарантино. Круто. Пойдемте в кино. Ура. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis dolor dolore dolores fugiat itaque laboriosam nulla odit, praesentium vero.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-menu__item">
+          </div>
+          <div class="main-menu__item">
+          </div>
+        </div>
+      </div>
+      <div class="single-event">
+        <div class="single-event__top-block">
+          <h1 class="single-event__title">Собираемся на шашлыки
+          </h1>
+          <button class="single-event__btn"><span class="single-event__btn-text">Пойду</span><i class="single-event__arr fas fa-angle-down"></i>
+          </button>
+        </div>
+        <ul class="single-event__nav nav">
+          <li class="single-event__nav-item nav-item">Общая беседа
+          </li>
+          <li class="single-event__nav-item nav-item active">О событии
+          </li>
+          <li class="single-event__nav-item nav-item">Засписание
+          </li>
+          <li class="single-event__nav-item nav-item">Список покупок
+          </li>
+        </ul>
+        <div class="single-event__container">
+          <div class="single-event__left-block">
+            <!-- single card start-->
+            <div class="card">
+              <div class="card__top-block">
+                <div class="card__info-block">
+                  <ul class="card__info-list card__info-list_single">
+                    <li class="card__info-item"><i class="card__info-icon far fa-calendar"></i><span class="card__info-text">6 апреля</span>
+                    </li>
+                    <li class="card__info-item"><i class="card__info-icon far fa-clock"></i><span class="card__info-text">12:15</span>
+                    </li>
+                    <li class="card__info-item card__info-item_price"><i class="card__info-icon fas fa-dollar-sign"></i><span class="card__info-text">300</span>
+                    </li>
+                    <li class="card__info-item"><i class="card__info-icon fas fa-subway"></i><span class="card__info-text">Маяковская</span>
+                    </li>
+                    <li class="card__info-item"><i class="card__info-icon fas fa-map-marker-alt"></i><span class="card__info-text">Невский проспект, 20</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__bottom-block">
+                <div class="card__person-block"><img class="card__person-img ava" src="img/user2.jpg" alt="" role="presentation"/><span class="card__name">Сергей Воронин</span>
+                </div>
+                <p class="card__invite-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum placeat vitae! Aliquam doloribus incidunt maiores, nemo quae quia quibusdam?
+                </p>
+              </div>
+              <div class="card-about"><img class="card-about__img" src="img/forest.jpg" alt="" role="presentation"/>
+                <p class="card-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores aut dolore dolorum enim eos est eveniet fugit laudantium maiores mollitia nam nesciunt possimus, quaerat ratione reiciendis similique sit vel.
+                </p>
+                <div class="card-about__img-text-block"><img class="card-about__img-small" src="img/forest.jpg" alt="" role="presentation"/>
+                  <p class="card-about__text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse ex laudantium nesciunt quam suscipit velit voluptatum. Incidunt, rem, totam!
+                  </p>
+                </div>
+                <p class="card-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores aut dolore dolorum enim eos est eveniet fugit laudantium maiores mollitia nam nesciunt possimus, quaerat ratione reiciendis similique sit vel.
+                  <div class="card-about__img-text-block"><img class="card-about__img-small" src="img/forest.jpg" alt="" role="presentation"/>
+                    <p class="card-about__text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse ex laudantium nesciunt quam suscipit velit voluptatum. Incidunt, rem, totam!
+                    </p>
+                  </div>
+                </p>
+                <p class="card-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores aut dolore dolorum enim eos est eveniet fugit laudantium maiores mollitia nam nesciunt possimus, quaerat ratione reiciendis similique sit vel.
+                </p>
+              </div>
+            </div>
+            <!-- single card finish-->
+          </div>
+          <div class="single-event__right-block">
+            <div class="right-block">
+              <ul class="right-block__list">
+                <li class="right-block__item">Приглашены(25)
+                </li>
+                <li class="right-block__item">Идут(11)
+                </li>
+                <li class="right-block__item active">Не уверены(12)
+                </li>
+              </ul>
+              <ul class="right-block__people-list">
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+                <li class="right-block__people-item"><img class="right-block__img ava" src="img/user.jpg" alt="" role="presentation"/><span class="right-block__name">Анна</span>
+                </li>
+              </ul>
+              <div class="right-block__map" id="map">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href="#">Как добавить событие</a>
+        </li>
+        <li class="footer__item"><a class="footer__link" href="#">Справка</a>
+        </li>
+        <li class="footer__item"><a class="footer__link" href="#">Найти друзей</a>
+        </li>
+      </ul><span class="footer__copyright">&#169 GdeVse2017</span>
     </footer>
     <!-- build:js js/vendor.min.js-->
     <script src="libs/jquery/dist/jquery.min.js"></script>
@@ -44,5 +350,44 @@
     <!-- build:js js/main.min.js-->
     <script src="js/main.js"></script>
     <!-- endbuild-->
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script>
+      // map
+      ymaps.ready(init);
+      var myMap;
+      
+      function init() {
+        myMap = new ymaps.Map("map", {
+          center: [59.931632, 30.336528],
+          zoom: 17
+        });
+      
+        var myPlacemark = new ymaps.Placemark([59.931632, 30.336528], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: '/img/map-mark.svg',
+          iconImageSize: [50, 50],
+          iconImageOffset: [-3, -42],
+          hintContent: '',
+          balloonContent: ''
+        });
+      
+        myMap.geoObjects.add(myPlacemark);
+      
+        myMap.controls
+          .remove('Button')
+          .remove('fullscreenControl')
+          .remove('typeSelector')
+          .remove('geolocationControl')
+          .remove('searchControl')
+          .remove('trafficControl')
+          .remove('rulerControl')
+          .remove('zoomControl');
+      
+        myMap.behaviors.disable([
+          'scrollZoom'
+        ])
+      }
+    </script>
   </body>
 </html>
